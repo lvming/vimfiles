@@ -16,9 +16,9 @@ inoremap <unique> <C-S> <ESC><ESC>:w<CR>a
 " <C-Q> close
 noremap <unique> <C-Q> :close<CR>
 " v_<C-X> del into clipboard - cut
-vnoremap <unique> <C-X> "+x
+"vnoremap <unique> <C-X> "+x
 " v_<C-Y> yank into clipboard - copy
-vnoremap <unique> <C-Y> "+y
+"vnoremap <unique> <C-Y> "+y
 " <C-P> put from clipboard - paste
 noremap <unique> <C-P> "+gp
 " toggle taglist <F11>
@@ -37,8 +37,8 @@ noremap <unique> <silent> <C-F4> :if &guioptions =~# 'T'<Bar>set guioptions-=T<B
 " "----------------------------------------------"
 colorscheme viming
 if has('x11')
-    set guifont=Bitstream\ Vera\ Sans\ Mono\ 10
-    set printfont=Bitstream\ Vera\ Sans\ Mono\ 10
+    set guifont=DejaVu\ Sans\ Mono\ 10
+    set printfont=DejaVu\ Sans\ Mono\ 10
 endif
 
 " guioptions
@@ -193,4 +193,4 @@ menu T&ags.&TlistToggle<Tab><F11> <F11><CR>
 " "=============================================="
 " plugin - others
 " "----------------------------------------------"
-let g:loaded_randomhelp = 1
+let g:loaded_randomhelp = 0

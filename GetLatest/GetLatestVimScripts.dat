@@ -5,7 +5,6 @@ ScriptID    SourceID	Filename
 52 11795 :AutoInstall: calendar.vim
 69 6273 :AutoInstall: project.vim
 273 7701 :AutoInstall: taglist.vim
-365 11829 :AutoInstall: bash-support.vim
 642 8136 :AutoInstall: getscript.vim
 895 2727 :AutoInstall: toggle.vim
 1494 5492 python_editing.vim
