@@ -31,6 +31,8 @@ noremap <unique> <silent> <C-F2> :if &spell<Bar>set nospell<Bar>echo 'spell off'
 noremap <unique> <silent> <C-F3> :if &number<Bar>set nonumber<Bar>echo 'number off'<Bar>else<Bar>set number<Bar>echo 'number on'<Bar>endif<CR>
 " toggle toolbar <C-F4>
 noremap <unique> <silent> <C-F4> :if &guioptions =~# 'T'<Bar>set guioptions-=T<Bar>else<Bar>set guioptions+=T<Bar>endif<CR>
+" omni complete <S-Space>
+inoremap <unique> <silent> <S-Space> <C-X><C-O>
 
 " "=============================================="
 " fonts and appearance
@@ -66,8 +68,8 @@ set statusline+=[%P]      "percentage
 " "----------------------------------------------"
 " language messages C
 set nospell
-set spelllang=en,zh
-set fileencodings=ucs-bom,utf8,chinese,taiwan,latin1
+set spelllang=en
+set fileencodings=ucs-bom,utf-8,chinese,taiwan,latin1
 
 " "=============================================="
 " format
@@ -123,17 +125,38 @@ autocmd FileType python
 autocmd BufNewFile *.py exe "normal a#!/usr/bin/env python\<CR># -*- coding: utf8 -*-\<CR>"
 
 " "=============================================="
-" filetype html xml xhtml
+" filetype html xml xhtml php
 " "----------------------------------------------"
+let g:xml_syntax_folding = 1
 autocmd FileType html
     \	setlocal softtabstop=2	|
-    \	setlocal shiftwidth=2
+    \	setlocal shiftwidth=2	|
+    \	setlocal nowrap
 autocmd FileType xml
     \	setlocal softtabstop=2	|
-    \	setlocal shiftwidth=2
+    \	setlocal shiftwidth=2	|
+    \	setlocal foldmethod=syntax |
+    \	setlocal nowrap
 autocmd FileType xhtml
     \	setlocal softtabstop=2	|
+    \	setlocal shiftwidth=2	|
+    \	setlocal nowrap
+
+" "=============================================="
+" filetype php
+" "----------------------------------------------"
+let g:PHP_default_indenting = 1
+autocmd FileType php
+    \	setlocal softtabstop=4	|
+    \	setlocal shiftwidth=4
+
+" "=============================================="
+" filetype sedona
+" "----------------------------------------------"
+autocmd FileType sedona
+    \	setlocal softtabstop=2 |
     \	setlocal shiftwidth=2
+
 
 " "=============================================="
 " filetype tex
