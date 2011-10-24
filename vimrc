@@ -129,17 +129,17 @@ autocmd BufNewFile *.py exe "normal a#!/usr/bin/env python\<CR># -*- coding: utf
 " "----------------------------------------------"
 let g:xml_syntax_folding = 1
 autocmd FileType html
-    \	setlocal softtabstop=2	|
-    \	setlocal shiftwidth=2	|
+    \	setlocal softtabstop=4	|
+    \	setlocal shiftwidth=4	|
     \	setlocal nowrap
 autocmd FileType xml
-    \	setlocal softtabstop=2	|
-    \	setlocal shiftwidth=2	|
+    \	setlocal softtabstop=4	|
+    \	setlocal shiftwidth=4	|
     \	setlocal foldmethod=syntax |
     \	setlocal nowrap
 autocmd FileType xhtml
-    \	setlocal softtabstop=2	|
-    \	setlocal shiftwidth=2	|
+    \	setlocal softtabstop=4	|
+    \	setlocal shiftwidth=4	|
     \	setlocal nowrap
 
 " "=============================================="
@@ -154,8 +154,8 @@ autocmd FileType php
 " filetype sedona
 " "----------------------------------------------"
 autocmd FileType sedona
-    \	setlocal softtabstop=2 |
-    \	setlocal shiftwidth=2
+    \	setlocal softtabstop=4 |
+    \	setlocal shiftwidth=4
 
 
 " "=============================================="
