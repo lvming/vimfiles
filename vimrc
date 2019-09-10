@@ -16,6 +16,7 @@ set statusline+=%h "help flag
 set statusline+=[%{&ff}] "fileformat
 set statusline+=[%{&fileencoding}] "fileencoding
 set statusline+=%y "filetype
+set statusline+=%{FugitiveStatusline()}
 set statusline+=%= "aligning separator
 " set statusline+=[%02Bh] "char hex value
 set statusline+=[%l,%c%V] "line num and column num
@@ -52,6 +53,7 @@ endif
 Plug 'editorconfig/editorconfig-vim'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/taglist.vim'
 
 " Initialize plugin system
