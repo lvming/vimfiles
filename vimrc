@@ -2,9 +2,10 @@
 " Usage:
 "   Remove ~/.vimrc OR source this file in ~/.vimrc
 
-" GUI {{{
+" UI {{{
 syntax on
 colorscheme torte
+set mouse=a
 set laststatus=2
 set statusline=
 set statusline+=[#%n] "buffer number
